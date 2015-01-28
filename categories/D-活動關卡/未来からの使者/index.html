@@ -3,20 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>前言 | Road To Dragon Blog</title>
+  <title>Category: 未来からの使者 | Road To Dragon Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[網站目的]：
-希望有個平台分享征龍的資訊，並記錄一下遊戲歷程。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="前言">
-<meta property="og:url" content="http://pinkpika.github.io/RTDBlog/2015/01/14/前言/">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Road To Dragon Blog">
+<meta property="og:url" content="http://pinkpika.github.io/RTDBlog/categories/D-活動關卡/未来からの使者/">
 <meta property="og:site_name" content="Road To Dragon Blog">
-<meta property="og:description" content="[網站目的]：
-希望有個平台分享征龍的資訊，並記錄一下遊戲歷程。">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前言">
-<meta name="twitter:description" content="[網站目的]：
-希望有個平台分享征龍的資訊，並記錄一下遊戲歷程。">
+<meta name="twitter:title" content="Road To Dragon Blog">
+<meta name="twitter:description">
 
   
     <link rel="alternative" href="/atom.xml" title="Road To Dragon Blog" type="application/atom+xml">
@@ -68,14 +65,16 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-前言" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-未来からの使者" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/RTDBlog/2015/01/14/前言/" class="article-date">
-  <time datetime="2015-01-14T13:58:45.000Z" itemprop="datePublished">Jan 14 2015</time>
+    <a href="/RTDBlog/2015/01/29/未来からの使者/" class="article-date">
+  <time datetime="2015-01-28T17:24:18.000Z" itemprop="datePublished">Jan 29 2015</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/RTDBlog/categories/B-前言/">B 前言</a>
+    <a class="article-category-link" href="/RTDBlog/categories/D-活動關卡/">D 活動關卡</a>►<a class="article-category-link" href="/RTDBlog/categories/D-活動關卡/未来からの使者/">未来からの使者</a>
   </div>
 
   </div>
@@ -85,8 +84,8 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      前言
+    <h1 itemprop="name">
+      <a class="article-title" href="/RTDBlog/2015/01/29/未来からの使者/">未来からの使者</a>
     </h1>
   
 
@@ -94,63 +93,80 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="[網站目的]：">[網站目的]：</h2>
-<p>希望有個平台分享征龍的資訊，並記錄一下遊戲歷程。</p>
-<a id="more"></a>
+        <!--more-->
 
-<h2 id="[創立]：">[創立]：</h2>
-<p>為了趕在日版5.2.0改版(2015/1/15)前創立，所以現在還只能算草創階段。<br>將會慢慢往前和往後更新網站內容。</p>
-<h2 id="[文章種類]：">[文章種類]：</h2>
-<p>預計會有的內容<br>1.關卡資訊(BOSS、掉落書等等)<br>2.角色資訊(故事、飾品、能力等等)<br>3.官方消息與周邊<br>4.同人創作</p>
-<h2 id="[版權]：">[版權]：</h2>
-<p>1.所有遊戲截圖和遊戲資訊皆為官方<a href="http://www.acquire.co.jp/" target="_blank" rel="external">Acquire</a>公司所有。<br>2.關卡資訊和角色資訊皆來主要來自<a href="http://rtd.rtwiki.net/" target="_blank" rel="external">ロードラ攻略Wiki</a>，<br>此網站資料為<a href="http://www.gnu.org/licenses/gpl.html" target="_blank" rel="external">GPL</a>之授權條款，會標註來源。<br>*如有其他標註版權製圖(關卡地圖等等)，除非詢問後，則不會使用。<br>3.同人創作(繪圖等等)一樣需經同意後才會放置。<br>4.本網站為”非營利”創立，保證”無任何廣告收入”，並且架設在Github pages。</p>
-<h2 id="[資料來源]：">[資料來源]：</h2>
-<p>公司：<a href="http://www.acquire.co.jp/" target="_blank" rel="external">株式会社アクワイア ACQUIRE</a><br>遊戲官網：<a href="http://smartphone.acquire.co.jp/rtd/" target="_blank" rel="external">ロード・トゥ・ドラゴン</a></p>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+
+
+<p id="abstract"></p>
+
+<p id="area_table"></p>
+
+<script>
+function aa(){
+    $.getJSON("../../../../data/event_area.json",function(result){
+        var index = 5;
+        var abstract = ("名稱："+result.event_area[index].name+"<br>");
+        abstract += ("單位："+result.event_area[index].unit+"<br>");
+        abstract += ("說明："+result.event_area[index].text+"<br>");
+        abstract += ("獎勵："+result.event_area[index].reward+"<br>");
+        abstract += ("附註："+result.event_area[index].other+"<br>");
+        abstract += ("參考資料："+"<a href='"+result.event_area[index].from+"'>ロードラ攻略Wiki</a>"+"(GPL授權)"+"<br>");
+
+        var area_table = "<table><tr><th>名稱</th><th>難度</th><th>距離</th><th>體力</th><th>經驗</th><th>BOSS</th><th>特性</th><th>掉落</th><th>特殊怪</th><th>挑戰</th><th>其他</th></tr>"
+
+        for (var i = 0; i < result.event_area[index].quest.length; i++) {
+            area_table += "<tr>";
+            area_table += ("<td>"+result.event_area[index].quest[i].name+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].dif+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].dis+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].suta+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].pp+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].boss+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].chara+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].fall+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].rare+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].chal+"</td>");
+            area_table += ("<td>"+result.event_area[index].quest[i].other+"</td>");
+            area_table += "</tr>";
+        };
+
+        area_table += "</table>";
+        area_table = area_table.replace(/ /g, "<br>");
+
+        document.getElementById("abstract").innerHTML = abstract;
+        document.getElementById("area_table").innerHTML = area_table;
+        //document.getElementById("demo").innerHTML = result.event_area.name ;
+    });
+}
+aa();
+</script>
+
 <hr>
-<ul>
-<li><a href="http://forum.gamer.com.tw/A.php?bsn=23421" target="_blank" rel="external">征龍之路 哈啦板 - 巴哈姆特</a></li>
-<li><a href="http://rtd.rtwiki.net/" target="_blank" rel="external">ロードラ攻略Wiki</a></li>
-<li><a href="http://blog.livedoor.jp/iphonegamer/" target="_blank" rel="external">【ロードラ】攻略ブログ（ドロップ・攻略・最新情報）</a></li>
-<li><a href="http://tieba.baidu.com/f?kw=%CD%C0%C1%FA%D6%AE%C2%B7" target="_blank" rel="external">屠龙之路吧_百度贴吧</a></li>
-</ul>
 
+        
+          <p class="article-more-link">
+            <a href="/RTDBlog/2015/01/29/未来からの使者/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://pinkpika.github.io/2015/01/14/前言/" data-id="mt609a5ygnwwtra0" class="article-share-link">Share</a>
+      <a data-url="http://pinkpika.github.io/2015/01/29/未来からの使者/" data-id="47bo1fw8keg40qgl" class="article-share-link">Share</a>
       
-        <a href="http://pinkpika.github.io/2015/01/14/前言/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://pinkpika.github.io/2015/01/29/未来からの使者/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/RTDBlog/tags/前言/">前言</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/RTDBlog/tags/未来からの使者/">未来からの使者</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/RTDBlog/tags/活動關卡/">活動關卡</a></li></ul>
 
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/RTDBlog/2015/01/18/ディバインゲートコラボ/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          ディバインゲートコラボ
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-  
 </article>
 
 
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
+  
+  
 </section>
         
           <aside id="sidebar">
@@ -246,13 +262,11 @@
 <script>
   var disqus_shortname = 'pinkpikartdblog';
   
-  var disqus_url = 'http://pinkpika.github.io/2015/01/14/前言/';
-  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
