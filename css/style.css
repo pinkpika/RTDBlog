@@ -179,7 +179,7 @@ body {
 .mobile-nav-on #wrap {
   left: 280px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   #main {
     display: inline;
     float: left;
@@ -424,7 +424,7 @@ body {
   font-weight: 300;
   letter-spacing: 1px;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1024px) {
   .main-nav-link {
     display: none;
   }
@@ -435,7 +435,7 @@ body {
 #main-nav-toggle:before {
   content: "\f0c9";
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1024px) {
   #main-nav-toggle {
     display: block;
   }
@@ -466,7 +466,7 @@ body {
   opacity: 1;
   right: 0;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1024px) {
   #search-form-wrap {
     width: 100%;
     right: -100%;
@@ -764,7 +764,7 @@ a.article-title:hover {
 #article-nav:after {
   clear: both;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   #article-nav {
     margin: 50px 0;
   }
@@ -798,20 +798,20 @@ a.article-title:hover {
 .article-nav-link-wrap:hover {
   color: #555;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .article-nav-link-wrap {
     width: 50%;
     margin-top: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   #article-nav-newer {
     float: left;
     text-align: right;
     padding-right: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   #article-nav-older {
     float: right;
     text-align: left;
@@ -1035,14 +1035,14 @@ a.article-title:hover {
   -moz-column-gap: 10px;
   column-gap: 10px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media mq-tablet {
   .archives {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .archives {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -1126,7 +1126,7 @@ a.article-title:hover {
 #page-nav .page-number {
   display: inline-block;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1024px) {
   #page-nav .page-number {
     display: none;
   }
@@ -1325,7 +1325,7 @@ pre .keyword,
 pre .javascript .function {
   color: #c9c;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1024px) {
   #mobile-nav {
     position: absolute;
     top: 0;
@@ -1336,7 +1336,7 @@ pre .javascript .function {
     border-right: 1px solid #fff;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1024px) {
   .mobile-nav-link {
     display: block;
     color: #999;
@@ -1348,7 +1348,7 @@ pre .javascript .function {
     color: #fff;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   #sidebar {
     display: inline;
     float: left;
